@@ -11,6 +11,8 @@ if 'current_question_index' not in st.session_state:
 if 'score' not in st.session_state:
     st.session_state['score'] = 0
 
+st.page_link(icon="🏠",page="Home page.py", label= "Home page")
+
 # Quiz page
 st.markdown("<h1 style='text-align: center;'>QUIZ</h1>", unsafe_allow_html=True)
 st.write("Welcome to the quiz page!")

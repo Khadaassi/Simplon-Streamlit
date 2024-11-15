@@ -61,8 +61,11 @@ The application provides various functionalities:
 - Create a Quiz: Users can add their own questions by filling out fields in a simple form.
 - Take a Quiz: Users can answer questions, and if their score is greater than half the total number of questions, st.balloons() is triggered to celebrate.
 
-<p align="center"> <img src="images/demo.gif" alt="Quiz Demo" width="600"/> </p> <p align="center"><i>Application showing options and quiz interactions.</i></p>
+<p align="center"> <img src="images/navigation.gif" alt="Quiz Demo" width="600"/> </p> <p align="center"><i>Application showing options and quiz interactions.</i></p>
 
+<p align="center"> <img src="images/creer quiz.gif" alt="Quiz Demo" width="600"/> </p>
+
+<p align="center"> <img src="images/quiz.gif" alt="Quiz Demo" width="600"/> </p>
 ## Evaluation Criteria
 
 Individual project completed over two days.
