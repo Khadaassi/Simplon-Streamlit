@@ -3,19 +3,19 @@
         "Question": "What is the square root of 144?",
         "Answers": {
             "Answer 1": "10",
-            "Answer 2": "12",
-            "Answer 3": "14"
+            "Answer 2": "14",
+            "Answer 3": "12"
         },
-        "Correct_Answer": "Answer 2"
+        "Correct_Answer": "12"
     },
     {
         "Question": "What year did World War II end?",
         "Answers": {
-            "Answer 1": "1940",
-            "Answer 2": "1945",
+            "Answer 1": "1945",
+            "Answer 2": "1940",
             "Answer 3": "1950"
         },
-        "Correct_Answer": "Answer 2"
+        "Correct_Answer": "1945"
     },
     {
         "Question": "Which planet is the hottest in our solar system?",
@@ -24,16 +24,16 @@
             "Answer 2": "Venus",
             "Answer 3": "Mars"
         },
-        "Correct_Answer": "Answer 2"
+        "Correct_Answer": "Mars"
     },
     {
         "Question": "How many legs does a spider have?",
         "Answers": {
-            "Answer 1": "6",
-            "Answer 2": "8",
-            "Answer 3": "10"
+            "Answer 1": "8",
+            "Answer 2": "10",
+            "Answer 3": "6"
         },
-        "Correct_Answer": "Answer 2"
+        "Correct_Answer": "8"
     },
     {
         "Question": "What is the hardest natural substance on Earth?",
@@ -42,51 +42,15 @@
             "Answer 2": "Diamond",
             "Answer 3": "Iron"
         },
-        "Correct_Answer": "Answer 2"
+        "Correct_Answer": "Diamond"
     },
     {
-        "Question": "What is the term for a baby kangaroo?",
+        "Question": "What is the capital of Australia?",
         "Answers": {
-            "Answer 1": "Cub",
-            "Answer 2": "Calf",
-            "Answer 3": "Joey"
+            "Answer 1": "Sydney",
+            "Answer 2": "Canberra",
+            "Answer 3": "Melbourne"
         },
-        "Correct_Answer": "Answer 3"
-    },
-    {
-        "Question": "Who was the famous ancient Greek philosopher who taught Alexander the Great?",
-        "Answers": {
-            "Answer 1": "Socrates",
-            "Answer 2": "Aristotle",
-            "Answer 3": "Plato"
-        },
-        "Correct_Answer": "Answer 2"
-    },
-    {
-        "Question": "What is the national animal of Scotland?",
-        "Answers": {
-            "Answer 1": "Lion",
-            "Answer 2": "Unicorn",
-            "Answer 3": "Dragon"
-        },
-        "Correct_Answer": "Answer 2"
-    },
-    {
-        "Question": "Question 1?",
-        "Answers": {
-            "Answer 1": "jhfoehu",
-            "Answer 2": "djhojh",
-            "Answer 3": "zojholhj"
-        },
-        "Correct_Answer": "jhfoehu"
-    },
-    {
-        "Question": "khkgjd",
-        "Answers": {
-            "Answer 1": "khgjhfgdf",
-            "Answer 2": "khgjgdd",
-            "Answer 3": "khgkyfdd"
-        },
-        "Correct_Answer": "khgjhfgdf"
+        "Correct_Answer": "Canberra"
     }
 ]

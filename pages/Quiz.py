@@ -24,7 +24,7 @@ if st.session_state['current_question_index'] < len(questions):
         st.write(f"Question {st.session_state['current_question_index'] + 1}: {question['Question']}")
         
         # Display multiple-choice answers
-        user_answer = st.radio("Choose your answer:", question['Answers'], key=f"question_{st.session_state['current_question_index']}")
+        user_answer = st.radio("Choose your answer:", question['Answers'].values(), key=f"question_{st.session_state['current_question_index']}")
         
         # value_button = "submit" if st.session_state["test"] else "next"
         # Submit button
@@ -33,15 +33,11 @@ if st.session_state['current_question_index'] < len(questions):
         if submitted:  # Check if the button was clicked
             if user_answer == question['Correct_Answer']:
                 st.success("Correct answer!")
-                st.session_state['current_question_index'] += 1
                 st.session_state['score'] += 1
-                st.rerun()
             else:
                 st.error("Wrong answer.")
-                st.session_state['current_question_index'] += 1
-                st.rerun()
             # Move to the next question after submission
-            # st.session_state['current_question_index'] += 1
+            st.session_state['current_question_index'] += 1
         # st.session_state["test"] = False if st.session_state["test"] else True
 
 else:

@@ -7,6 +7,7 @@ from config.json_utils import read_json, write_json
 # Define the full path to the JSON file in the config folder
 json_file_path = 'config/data.json'
 
+st.page_link(icon="🏠",page="Home page.py", label= "Home page")
 # Quiz creation interface
 st.html("<h1 style='text-align: center;'>Create Your QUIZ</h1>")
 
