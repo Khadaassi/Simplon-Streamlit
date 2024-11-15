@@ -1,4 +1,6 @@
 import streamlit as st
+from pydantic import ValidationError
+from quiz_models import Question
 
 from config.json_utils import read_json, write_json
 
@@ -9,7 +11,7 @@ json_file_path = 'config/data.json'
 st.html("<h1 style='text-align: center;'>Create Your QUIZ</h1>")
 
 with st.form(key="quiz_form", clear_on_submit=True):
-    question = st.text_input("Enter the question:")
+    question_text = st.text_input("Enter the question:")
     answer_1 = st.text_input("Enter answer 1.")
     answer_2 = st.text_input("Enter answer 2.")
     answer_3 = st.text_input("Enter answer 3.")
@@ -22,22 +24,28 @@ with st.form(key="quiz_form", clear_on_submit=True):
     submitted = st.form_submit_button("Submit")
 
     if submitted:
-        if not question or not answer_1 or not answer_2 or not answer_3:
+        if not question_text or not answer_1 or not answer_2 or not answer_3:
             st.error("Please fill in all fields before submitting.")
         else:
             correct_answer = answers[correct_answer_key]
             
-            data = {
-                "Question": question,
-                "Answers": [answer_1, answer_2, answer_3],
-                "Correct Answer": correct_answer
-            }
+            # Validate the question using pydantic
+            try:
+                new_question = Question(
+                    Question=question_text,
+                    Answers=answers,
+                    Correct_Answer=correct_answer
+                )
+                # If validation passes, read, append, and write to JSON
+                existing_data = [Question(**entry) for entry in read_json(json_file_path)]
+                existing_data.append(new_question)
 
-            existing_data = read_json(json_file_path)
-            existing_data.append(data)
+                write_json(json_file_path, existing_data)
+                st.success("Question successfully submitted!")
 
-            write_json(json_file_path, existing_data)
-            st.success("Question successfully submitted!")
+            except ValidationError as e:
+                st.error(f"Validation error: {e}")
+
 
 left_column, right_column = st.columns(2)
 
@@ -50,7 +58,7 @@ with left_column:
                 st.write(f"**Question {i}:** {question_entry['Question']}")
                 for idx, ans in enumerate(question_entry['Answers'], start=1):
                     st.write(f"- Answer {idx}: {ans}")
-                st.write(f"**Correct answer:** {question_entry['Correct Answer']}")
+                st.write(f"**Correct answer:** {question_entry['Correct_Answer']}")
                 st.write("---")
         else:
             st.info("No questions saved.")

@@ -77,7 +77,46 @@ st.markdown(
         }
     }
     </style>
-    <a href="http://localhost:8501/Start_a_quiz" class="custom-button">Start a quiz</a>
+    <a href="http://localhost:8501/Quiz" class="custom-button">Start a quiz</a>
+    """,
+    unsafe_allow_html=True
+)
+
+st.page_link("pages/Create a quiz.py",label ="Create_a_quiz")
+
+st.markdown(
+    """
+    <style>
+    .custom-button {
+        display: block;
+        margin: auto;
+        padding: 15px 20px;
+        font-size: 18px;
+        color: black;
+        text-decoration: none;
+        border: 1px solid;
+        border-radius: 5px;
+        cursor: pointer;
+        text-align: center;
+        background-color: transparent;
+    }
+
+    .custom-button:hover {
+        color: black;
+    }
+
+    /* Dark mode detection */
+    @media (prefers-color-scheme: dark) {
+        .custom-button {
+            color: white; /* White text by default in dark mode */
+            border-color: white; /* White border in dark mode */
+        }
+        .custom-button:hover {
+            color: white; /* Keep white text on hover in dark mode */
+        }
+    }
+    </style>
+    <a href="pages/Create%20a%20quiz.py" class="custom-button">Create a quiz</a>
     """,
     unsafe_allow_html=True
 )
