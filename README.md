@@ -66,6 +66,7 @@ The application provides various functionalities:
 <p align="center"> <img src="images/creer quiz.gif" alt="Quiz Demo" width="600"/> </p>
 
 <p align="center"> <img src="images/quiz.gif" alt="Quiz Demo" width="600"/> </p>
+
 ## Evaluation Criteria
 
 Individual project completed over two days.
