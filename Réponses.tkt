@@ -1,3 +1,10 @@
 - Quelle est la limite d'utiliser un fichier plat dans l'application ?
 
+Utiliser un fichier plat limite l'application car il devient lent et 
+difficile à gérer quand il y a beaucoup de données. 
+
+
 - Quelle serait la prochaine étape pour scaler l'application ?
+
+Pour améliorer l'application, il serait mieux de passer à une base de données, 
+ce qui rendrait l'accès aux données plus rapide et plus efficace.
