@@ -61,11 +61,24 @@ The application provides various functionalities:
 - Create a Quiz: Users can add their own questions by filling out fields in a simple form.
 - Take a Quiz: Users can answer questions, and if their score is greater than half the total number of questions, st.balloons() is triggered to celebrate.
 
-<p align="center"> <img src="images/navigation.gif" alt="Quiz Demo" width="600"/> </p> <p align="center"><i>Application showing options and quiz interactions.</i></p>
+<p align="center"><b>Navigation through the home page</b></p>
+<video width="auto" controls>
+  <source src="images/navigation.mov" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
-<p align="center"> <img src="images/creer quiz.gif" alt="Quiz Demo" width="600"/> </p>
+<p align="center"><b>Creating a quiz by filling out the form</b></p>
+<video width="auto" controls>
+  <source src="images/creer_quiz.mov" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
-<p align="center"> <img src="images/quiz.gif" alt="Quiz Demo" width="600"/> </p>
+<p align="center"><b>Launching and interacting with the quiz</b></p>
+<video width="auto" controls>
+  <source src="images/quiz.mov" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 
 ## Evaluation Criteria
 
@@ -91,3 +104,4 @@ Evaluation is based on:
 ## Author
 
 Khadija Aassi <a href="https://github.com/Khadaassi" target="_blank"> <img loading="lazy" src="images/github-mark.png" width="30" height="30" style="vertical-align: middle; margin-left: 15px;" alt="GitHub Logo"> </a>
+
